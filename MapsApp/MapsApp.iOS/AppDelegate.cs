@@ -22,6 +22,10 @@ namespace MapsApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            //Esto es para inicializar maps
+            Xamarin.FormsMaps.Init();
+
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
